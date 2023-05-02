@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-image: url(layered-waves-haikei.svg)
+}
+input{
+    position: relative;
+    display: block;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    padding: 0.8rem;
+    box-shadow: 0 0.4rem rgb(32, 53, 71);
+    margin: auto;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(46, 72, 95);
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: 4.5vh;
+    font-size: 1rem;
+    width: 70%;
+
+}
+label{
+    position: absolute;
+    left: 83px;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    font-weight: bold;
+    transition: 200ms cubic-bezier(0.4, 0, .2, 1);
+}
+#formulario{
+    position: absolute;
+    border-radius: 10px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 456px;
+    height: 617px;
+    background-color: rgb(46, 72, 95);
+    margin: auto;
+}
+p{
+    font-size: 2.3rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+#nome{
+    margin-top: 20px;
+}
+#lbnome{
+    top: 88px;
+}
+#lbemail{
+    top: 165px;
+}
+#lbtel{
+    top: 243px;
+}
+#lbnasc{
+   top: 322px;
+}
+#lbcurso{
+    top: 400px;
+}
+#lbmatricula{
+    top: 477px;
+}
+input#nome:focus ~ label#lbnome, #nome:not(:placeholder-shown) ~ label#lbnome{
+    transform: translate(-8%, -117%) scale(.8);
+    background-color: rgb(46, 72, 95);
+    padding: 0 .2em;
+}
+input#email:focus ~ label#lbemail, #email:not(:placeholder-shown) ~ label#lbemail{
+    transform: translate(-8%, -117%) scale(.8);
+    background-color: rgb(46, 72, 95);
+    padding: 0 .2em;
+}
+input#telefone:focus ~ label#lbtel, #telefone:not(:placeholder-shown) ~ label#lbtel{
+    transform: translate(-5%, -117%) scale(.8);
+    background-color: rgb(46, 72, 95);
+    padding: 0 .2em;
+}
+input#data_nascimento:focus ~ label#lbnasc, #data_nascimento:not(:placeholder-shown) ~ label#lbnasc{
+    transform: translate(-8%, -117%) scale(.8);
+    background-color: rgb(46, 72, 95);
+    padding: 0 .2em;
+}
+input#matricula:focus ~ label#lbmatricula, #matricula:not(:placeholder-shown) ~ label#lbmatricula{
+    transform: translate(-8%, -117%) scale(.8);
+    background-color: rgb(46, 72, 95);
+    padding: 0 .2em;
+}
+input#curso:focus ~ label#lbcurso, #curso:not(:placeholder-shown) ~ label#lbcurso{
+    transform: translate(-3%, -117%) scale(.8);
+    background-color: rgb(46, 72, 95);
+    padding: 0 .2em;
+}
+#cadastrar{
+    width: 45%;
+    background-color: rgb(231, 14, 14);
+    border: none;
+    box-shadow:  0.4rem #203547;
+}
+#cadastrar:hover{
+    background-color: red;
+}
+#cadastrar:active{
+    transform: translateY(.4rem);
+    box-shadow: none;
+}
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+
+}
+
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Formulário</title>
+</head>
+<body>
+    <main>
+        <section id="formulario">
+            <p>Formulário</p>
+            <form action="">
+                <input type="text" name="nome" id="nome" placeholder=" ">
+                <label for="nome" id="lbnome">Nome Completo</label>
+                <input type="email" name="email" id="email" placeholder=" ">
+                <label for="email" id="lbemail">Endereço de Email</label>
+                <input type="tel" name="telefone" id="telefone" placeholder=" ">
+                <label for="telefone" id="lbtel">Telefone</label>
+                <input type="text" name="data_nascimeto" id="data_nascimento" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder=" ">
+                <label for="data_nascimento" id="lbnasc">Data de Nascimento</label>
+                <input type="text" name="curso" id="curso" placeholder=" ">
+                <label for="curso" id="lbcurso">Curso</label>
+                <input type="number" name="matricula" id="matricula" placeholder=" ">
+                <label for="matricula" id="lbmatricula">Número de matrícula</label>
+                <input type="submit" value="cadastrar" id="cadastrar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
